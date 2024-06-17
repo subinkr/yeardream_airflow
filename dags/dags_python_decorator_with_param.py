@@ -16,8 +16,12 @@ with DAG(
         print(f'기타옵션들: {args}')
         email = kwargs['email'] or 'empty'
         phone = kwargs['phone'] or 'empty'
+        start = kwargs['data_interval_start']
+        end = kwargs['data_interval_end']
         print(f'email: {email}')
         print(f'phone: {phone}')
+        print(start)
+        print(end)
         from pprint import pprint
         pprint(kwargs)
 
