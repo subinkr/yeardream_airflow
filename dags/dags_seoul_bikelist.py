@@ -15,3 +15,4 @@ with DAG(
         path='/opt/airflow/ingest/bikeList/{{data_interval_end.in_timezone("Asia/Seoul") | ds_nodash }}',
         file_name='bikeList.csv'
     )
+    
